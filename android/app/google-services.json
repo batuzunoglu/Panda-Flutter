@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1034439349249",
+    "project_id": "panda-149d9",
+    "storage_bucket": "panda-149d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034439349249:android:a5af42684d0f4eb4d35c00",
+        "android_client_info": {
+          "package_name": "com.example.panda_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034439349249-rac4ot3gcq00ep8el35o8kci3np7607f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl8BENZCFc3XzkILzV65PwJ6rHnZ54Urg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034439349249-rac4ot3gcq00ep8el35o8kci3np7607f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
