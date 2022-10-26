@@ -59,18 +59,20 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 64,
               ),
-              Container(
-                child: const Text('Log in'),
-                width: double.infinity,
-                alignment: Alignment.center,
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                decoration: const ShapeDecoration(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(4),
+              InkWell(
+                child: Container(
+                  width: double.infinity,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  decoration: const ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(4),
+                      ),
                     ),
+                    color: blueColor,
                   ),
-                  color: blueColor,
+                  child: const Text('Log in'),
                 ),
               ),
               const SizedBox(
@@ -84,11 +86,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: const Text("Don't have an accont?"),
                   ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: const Text(
-                      "Sign Up",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: const Text(
+                        "Sign Up",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   )
                 ],
