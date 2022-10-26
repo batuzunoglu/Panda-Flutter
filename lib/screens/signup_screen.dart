@@ -3,22 +3,26 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:panda_flutter/utils/colors.dart';
 import 'package:panda_flutter/widdgets/text_field_input.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignupScreen> createState() => _SignupScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _bioController = TextEditingController();
+  final TextEditingController _usernameController = TextEditingController();
 
   @override
   void dispose() {
     super.dispose();
     _emailController.dispose();
     _passwordController.dispose();
+    _bioController.dispose();
+    _usernameController.dispose();
   }
 
   @override
@@ -44,6 +48,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 64,
               ),
               TextFieldInput(
+                  textEditingController: _usernameController,
+                  hintText: 'Enter your Username',
+                  textInputType: TextInputType.text),
+              const SizedBox(
+                height: 24,
+              ),
+              TextFieldInput(
                   textEditingController: _emailController,
                   hintText: 'Enter your Email',
                   textInputType: TextInputType.emailAddress),
@@ -57,7 +68,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 isPass: true,
               ),
               const SizedBox(
-                height: 64,
+                height: 24,
+              ),
+              TextFieldInput(
+                  textEditingController: _bioController,
+                  hintText: 'Enter your bio',
+                  textInputType: TextInputType.text),
+              const SizedBox(
+                height: 24,
               ),
               InkWell(
                 child: Container(

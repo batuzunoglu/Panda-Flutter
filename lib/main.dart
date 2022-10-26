@@ -5,6 +5,7 @@ import 'package:panda_flutter/responsive/mobile_screen_layout.dart';
 import 'package:panda_flutter/responsive/responsive_layout_screen.dart';
 import 'package:panda_flutter/responsive/web_screen_layout.dart';
 import 'package:panda_flutter/screens/login_screen.dart';
+import 'package:panda_flutter/screens/signup_screen.dart';
 import 'package:panda_flutter/utils/colors.dart';
 
 void main() async {
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
       //   mobileScreenLayout: MobileScreenLayout(),
       //   webScreenLayout: WebScreenLayout(),
       // ),
-      home: const LoginScreen(),
+      home: const SignupScreen(),
     );
   }
 }

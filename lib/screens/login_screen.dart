@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 isPass: true,
               ),
               const SizedBox(
-                height: 64,
+                height: 24,
               ),
               InkWell(
                 child: Container(
