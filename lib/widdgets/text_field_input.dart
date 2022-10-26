@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TextFiledInput extends StatelessWidget {
+class TextFieldInput extends StatelessWidget {
   final TextEditingController textEditingController;
   final bool isPass;
   final String hintText;
   final TextInputType textInputType;
-  const TextFiledInput(
+  const TextFieldInput(
       {super.key,
       required this.textEditingController,
       this.isPass = false,
